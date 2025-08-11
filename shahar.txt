@@ -1,2 +1,8 @@
 fyufj
 dtufjuj
+
+git clone - Clone the repo
+git status - See which files are out of the next push
+git add .
+git commit -m "Put here the commit"
+git push 
