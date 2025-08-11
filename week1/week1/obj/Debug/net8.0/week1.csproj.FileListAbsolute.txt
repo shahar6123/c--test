@@ -1,0 +1,14 @@
+C:\Users\שחר בר\source\repos\week1\week1\bin\Debug\net8.0\week1.exe
+C:\Users\שחר בר\source\repos\week1\week1\bin\Debug\net8.0\week1.deps.json
+C:\Users\שחר בר\source\repos\week1\week1\bin\Debug\net8.0\week1.runtimeconfig.json
+C:\Users\שחר בר\source\repos\week1\week1\bin\Debug\net8.0\week1.dll
+C:\Users\שחר בר\source\repos\week1\week1\bin\Debug\net8.0\week1.pdb
+C:\Users\שחר בר\source\repos\week1\week1\obj\Debug\net8.0\week1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\שחר בר\source\repos\week1\week1\obj\Debug\net8.0\week1.AssemblyInfoInputs.cache
+C:\Users\שחר בר\source\repos\week1\week1\obj\Debug\net8.0\week1.AssemblyInfo.cs
+C:\Users\שחר בר\source\repos\week1\week1\obj\Debug\net8.0\week1.csproj.CoreCompileInputs.cache
+C:\Users\שחר בר\source\repos\week1\week1\obj\Debug\net8.0\week1.dll
+C:\Users\שחר בר\source\repos\week1\week1\obj\Debug\net8.0\refint\week1.dll
+C:\Users\שחר בר\source\repos\week1\week1\obj\Debug\net8.0\week1.pdb
+C:\Users\שחר בר\source\repos\week1\week1\obj\Debug\net8.0\week1.genruntimeconfig.cache
+C:\Users\שחר בר\source\repos\week1\week1\obj\Debug\net8.0\ref\week1.dll

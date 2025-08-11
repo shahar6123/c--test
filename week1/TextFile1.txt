@@ -1,0 +1,74 @@
+
+
+*** כשקולטים מספר שלם מהמשתמש נרשום כך:
+~  int num = Convert.ToInt32(Console.ReadLine());
+כי צריך להמיר את הקלט בחזרה ל-int 
+כי כברירת מחדל הוא מחזיר מחרוזת (string)
+ניתן להשתמש גם ב:
+~  int num = int.Parse(Console.ReadLine());
+(אבל רק כשבטוחים שהקלט תמיד מספרי)
+
+יש אופציה לבדוק אם הקלט מספר וזה עי תנאי:
+דוגמה לשימוש:
+Console.write("Enter a number: ");
+string input = Console.ReadLine();	//לא יודעים אם הוזן מספר או ערך מסוג מחרוזת
+if (int.TryParse(input, out int num))	//נעשה ניסיון המרה של הערך שהוזן לטיפוס מסוג int
+{
+	Console.WriteLine($"You entered the number: {num}")	//ההמרה הצליחה ולכן מודפסת הודעה שזה מספר
+}
+else	//במידה וההמה לא מצליחה זה אומר שלא מדומר במספר וזה ילך לאופציה השנייה
+{
+	Console.WriteLine("Invalid input! Please enter a valid number.")
+}
+ההיתרון שהתוכנית לא תקרוס גם אם המשתמש מכניס ערך לא חוקי, לעומת שתי האופציות הראשונות בהן תתקבל שגיאה
+
+
+
+Array- מערך
+אוסף של איברים מאותו טיפוס עם גודל קבוע
+הגישה לאיברים לפי אינדקס (i)
+הגדרה-
+int[] arr = new int[5]  //הגדרת מערך בגודל 5
+arr[0] = 14;			//הערך במקום ה-0 שווה ל-14
+arr[1] = -9;			//הערך במקום ה-1 שווה למינוס 9
+arr[2] = Convert.ToInt32(Console.ReadLine());	//קליטת ערך מספר מהמשתמש
+arr[i] = Convert.ToInt32(Console.ReadLine());	//לרוב בשביל לולאות
+
+
+List<T> - רשימה
+אוסף גמיש של איבריםת יכול לגדול ולהצטמצם
+גישה לפי אינדקס (i)
+לעיתים צריך להוסיף System.Collections.Generic בגרסאות ישנות יותר
+הגדרה-
+List<int> Jlst = new list<int>();	//הגדרת רשימה חדשה
+Jlst.Add(10);						//הוספת הערך 10 לרשימה
+Jlst.Add(Convert.ToInt32(Console.ReadLine()))	//קליטת ערך מספר מהמשתמש
+
+
+Queue<T> - תור
+מבנה נתונים מסוג FIFO
+משמש בעיקר בתהליכים של "תור משימות" או "המתנה" ן
+לעיתים צריך להוסיף System.Collections.Generic בגרסאות ישנות יותר
+הגדרה-
+Queue<int> MyQ = new Queue <int>();		//הגדרת תור 
+MyQ.Enqueue(7);			//הכנסה לתור
+MyQ.Enqueue(3);
+MyQ.Enqueue(4);
+int first = MyQ.Dequeue();	//הוצאה מהתור- נקבל 7
+
+
+
+כשעושית מתודה בתוך class (לא בתוכנית הראשית)
+בכותרת:
+public static void NAME ()
+*אפשר לתת ערכים מראש לתוכנית
+*ואפשר להגדיר שנקבל ערך מהתוכנית
+וצריך להגדיר זאת בכותרת
+לדוגמה:
+public static bool NAME (int num) -> נצטרך לתת לפעולה מספר ונקבל ערך מסוג בוליאני (true/ false)
+public static double NAME (int num1, int num2, double num3) -> נקבל ערך מסוג (double)
+public static string NAME (string FName, string LName) -> נקבל ערך מסוג (string)
+public static void NAME (int num1, int num2) -> לא נקבל ערך
+public static Queue<int> NAME (int num1, int num2) -> נצטרך לתת לפעולה 2 פרמטרים מסוג (int) ויתקבל מהפעולה תור מסוג (int)
+public static void NAME (int[] arr) -> נצטרך לתת לפעולה מערך מסוג (int)
+
